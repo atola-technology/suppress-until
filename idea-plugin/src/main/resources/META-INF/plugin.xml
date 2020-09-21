@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>org.atola.internal.suppress-until</id>
+    <name>Suppress Until</name>
+    <category>Tools Integration</category>
+    <vendor email="dmitry.marchuk@atola.com" url="atola.com">Atola Technology</vendor>
+
+    <description><![CDATA[
+        This plugin enables support for custom <b>Suppress Until</b> kotlin compiler plugin.<br>
+        ]]></description>
+
+    <depends>org.jetbrains.kotlin</depends>
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationInitializedListener implementation="org.atola.internal.suppressUntil.ide.IdeRegistrar"/>
+        <projectService serviceImplementation="org.atola.internal.suppressUntil.config.SuppressUntilConfigStorage"/>
+
+        <projectConfigurable groupId="tools"
+                             displayName="Suppress Until"
+                             id="preferences.suppressUntil"
+                             instance="org.atola.internal.suppressUntil.config.SuppressUntilConfig"/>
+    </extensions>
+
+    <depends>com.intellij.modules.lang</depends>
+</idea-plugin>

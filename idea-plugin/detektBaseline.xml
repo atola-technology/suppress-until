@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+    <ManuallySuppressedIssues></ManuallySuppressedIssues>
+    <CurrentIssues>
+        <ID>EmptyFunctionBlock:DummyTestNotificationComponent.kt$DummyTestNotificationComponent${}</ID>
+        <ID>MatchingDeclarationName:IdeRegistrar.kt$IdeRegistrar : ApplicationInitializedListener</ID>
+        <ID>MaxLineLength:IdeRegistrar.kt$IdeRegistrar.&lt;no name provided&gt;.&lt;no name provided&gt;.&lt;no name
+            provided&gt;$override
+        </ID>
+    </CurrentIssues>
+</SmellBaseline>
